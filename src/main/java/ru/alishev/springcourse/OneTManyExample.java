@@ -16,6 +16,7 @@ public class OneTManyExample {
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         try {
+            //test
             session.beginTransaction();
             Person person = session.get(Person.class, 9);
             session.getTransaction().commit();
